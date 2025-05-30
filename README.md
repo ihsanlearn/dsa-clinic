@@ -14,8 +14,6 @@
 
 ---
 
-## 📂 Struktur Folder
-
 
 ## 📂 Struktur Folder
 
