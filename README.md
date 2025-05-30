@@ -18,21 +18,31 @@
 
 ## 📂 Struktur Folder
 
-DaisukeClinic/
-├── .vscode/ # Pengaturan editor (optional)
-├── bin/ # Folder hasil kompilasi
-├── lib/ # (Kosong / Optional)
-├── src/ # Source code utama
-│ ├── Appointment.java # Kelas janji temu
-│ ├── BST.java # Binary Search Tree untuk data dokter
-│ ├── Doctor.java # Model data dokter
-│ ├── DoctorLinkedList.java # Linked List khusus dokter
-│ ├── LinkedList.java # Struktur data linked list umum
-│ ├── Main.java # Program utama (titik masuk)
-│ ├── Patient.java # Model data pasien
-│ ├── Queue.java # Struktur antrian janji temu
-│ └── Stack.java # Struktur stack (opsional)
-└── README.md # Dokumentasi proyek ini
+
+## 📂 Struktur Folder
+
+```
+dsa-clinic/
+├── .vscode/                
+│   → Pengaturan editor (opsional)
+├── bin/                    
+│   → Folder hasil kompilasi
+├── lib/                    
+│   → Kosong / opsional
+├── src/                    
+│   → Source code utama
+│   ├── Appointment.java         
+│   ├── BST.java                 
+│   ├── Doctor.java              
+│   ├── DoctorLinkedList.java    
+│   ├── LinkedList.java          
+│   ├── Main.java                
+│   ├── Patient.java             
+│   ├── Queue.java               
+│   └── Stack.java               
+└── README.md                  
+    → Dokumentasi proyek ini
+```
 
 
 ---
