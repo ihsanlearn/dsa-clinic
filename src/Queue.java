@@ -23,11 +23,11 @@ public class Queue {
 
     public void processNextAppointment() {
         if (front != null) {
-            System.out.println("Processing: " + front.appointment);
+            System.out.println("processing... " + front.appointment);
             front = front.next;
             if (front == null) rear = null;
         } else {
-            System.out.println("No appointments to process.");
+            System.out.println("no appointments to process!");
         }
     }
 

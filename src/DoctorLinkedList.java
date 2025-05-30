@@ -44,7 +44,7 @@ public class DoctorLinkedList {
         if (head != null) {
             System.out.println(head.doctor);
         } else {
-            System.out.println("No doctor is currently logged in.");
+            System.out.println("no doctor is currently logged in!!");
         }
     }
 }
