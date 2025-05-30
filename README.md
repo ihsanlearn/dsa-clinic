@@ -6,12 +6,10 @@
 
 ## 🧠 Fitur Utama
 
-- ✅ Tambah, lihat, edit, dan hapus data **pasien**.
+- ✅ Tambah, lihat, dan hapus data **pasien**.
 - ✅ Manajemen data **dokter** menggunakan struktur data **Linked List**.
 - ✅ Penjadwalan dan antrian **janji temu** menggunakan **Queue**.
 - ✅ Penyimpanan data **dokter** juga tersedia dalam bentuk **BST (Binary Search Tree)**.
-- ✅ Struktur **Stack** disediakan untuk fitur undo/redo atau kebutuhan lainnya.
-- ✅ Penyimpanan data menggunakan file `.txt` (tanpa database).
 - ✅ Interaksi penuh lewat terminal (CLI).
 
 ---
