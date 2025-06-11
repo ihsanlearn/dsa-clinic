@@ -13,14 +13,21 @@ public class DoctorLoginList {
         }
     }
 
-    private Node head;
+    private Node head = null;
 
     public void loginDoctor(Doctor doctor) {
-        logoutDoctor(doctor.id); // prevent duplicate login
         Node newNode = new Node(doctor);
-        newNode.next = head;
-        head = newNode;
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
     }
+
 
     public void logoutDoctor(int id) {
         if (head == null) return;
@@ -40,7 +47,7 @@ public class DoctorLoginList {
         }
     }
 
-    public Doctor getLoggedInDoctor() {
+    public Doctor getLastLoggedInDoctor() {
         return (head != null) ? head.doctor : null;
     }
 
@@ -60,5 +67,14 @@ public class DoctorLoginList {
             tmp = tmp.next;
         }
         return false;
+    }
+
+    public Doctor isLoggedIn(String name) {
+        Node temp = head;
+        while (head != null) {
+            if (temp.doctor.name.trim().equalsIgnoreCase(name)) return temp.doctor;
+            temp = temp.next;
+        }
+        return null;
     }
 }

@@ -25,7 +25,7 @@ public class AppointmentPriorityQueue {
 
         Node current = head;
         while (current.next != null &&
-               current.next.data.getTimeInMinutes() <= appt.getTimeInMinutes()) {
+            current.next.data.getTimeInMinutes() <= appt.getTimeInMinutes()) {
             current = current.next;
         }
         newNode.next = current.next;

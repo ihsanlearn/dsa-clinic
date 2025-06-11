@@ -1,6 +1,10 @@
 package utils;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
 import models.*;
 import structures.*;
 
@@ -67,26 +71,82 @@ public class FileManager {
         } catch (IOException ignored) {}
     }
 
-    public static void saveSession(Doctor doctor, String filepath) {
-        try (PrintWriter writer = new PrintWriter(new FileWriter(filepath))) {
-            writer.println(doctor.serialize() + ";" + doctor.loginTime);
-        } catch (IOException ignored) {}
+    public static void updateLogin(Doctor doctor, String filepath) {
+        try {
+            List<String> lines = Files.readAllLines(Paths.get(filepath));
+            try (PrintWriter writer = new PrintWriter(new FileWriter(filepath))) {
+                for (String line : lines) {
+                    // Misalnya cocokkan berdasarkan ID
+                    if (line.startsWith(doctor.id + ";")) {
+                        writer.println(doctor.serialize());
+                    } else {
+                        writer.println(line); // baris lain tetap ditulis ulang seperti sebelumnya
+                    }
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    public static Doctor loadSession(String filepath) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(filepath))) {
-            String line = reader.readLine();
-            if (line == null) return null;
-            String[] parts = line.split(";");
-            Doctor d = new Doctor(Integer.parseInt(parts[0]), parts[1], parts[2], parts[3]);
-            d.loginTime = parts[4];
-            return d;
-        } catch (IOException ignored) {
-            return null;
+    public static void updateLogout(Doctor doctor, String filepath) {
+        try {
+            List<String> lines = Files.readAllLines(Paths.get(filepath));
+            try (PrintWriter writer = new PrintWriter(new FileWriter(filepath))) {
+                for (String line : lines) {
+                    // Misalnya cocokkan berdasarkan ID
+                    if (line.startsWith(doctor.id + ";")) {
+                        writer.println(doctor.serialize());
+                    } else {
+                        writer.println(line); // baris lain tetap ditulis ulang seperti sebelumnya
+                    }
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+    }
+
+    public static void loadSession(DoctorLoginList doctors, String filepath) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filepath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                Doctor doctor = Doctor.deserialize(line);
+                if (!doctor.loginTime.equals("inactive")) {
+                    doctors.loginDoctor(doctor);
+                }
+            }
+        } catch (IOException ignored) {}
     }
 
     public static void clearSession(String filepath) {
         new File(filepath).delete();
     }
+
+    public static int generateNewId(String filepath) {
+        int newId = 1;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(filepath))) {
+            String line;
+            String lastLine = null;
+
+            while ((line = reader.readLine()) != null) {
+                if (!line.trim().isEmpty()) {
+                    lastLine = line;
+                }
+            }
+
+            if (lastLine != null) {
+                String[] parts = lastLine.split(";");
+                if (parts.length > 0) {
+                    newId = Integer.parseInt(parts[0]) + 1;
+                }
+            }
+        } catch (IOException | NumberFormatException e) {
+            e.printStackTrace();
+        }
+
+        return newId;
+    }
+
 }

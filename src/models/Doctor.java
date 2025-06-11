@@ -12,11 +12,11 @@ public class Doctor {
         this.name = name;
         this.specialty = specialty;
         this.password = password;
-        this.loginTime = "";
+        this.loginTime = "inactive";
     }
 
     public String serialize() {
-        return id + ";" + name + ";" + specialty + ";" + password;
+        return id + ";" + name + ";" + specialty + ";" + password + ";" + loginTime;
     }
 
     public static Doctor deserialize(String line) {

@@ -11,7 +11,6 @@ public class AppointmentMap {
                 return queues[i];
             }
         }
-        // if not found, create
         doctorIds[size] = doctorId;
         queues[size] = new AppointmentPriorityQueue();
         size++;

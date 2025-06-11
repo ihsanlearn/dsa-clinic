@@ -1,2 +1,4 @@
-1654;Andi;12;Jokowalang;12831203102
-1601;Jiko;13;Kitolaby;323920323
+1;Ihsan;19;Jogja;0812280893
+2;Nisa;17;Jogja;0892324282
+3;Andi;19;Jogja;093483242342
+3;Indo;18;Indonesia;01238423
