@@ -1,3 +1,18 @@
+# Clinic Sehat Tentram Sejahtera Indonesia Raya
+
+## Daftar Isi
+
+- [Kelompok](#kelompok)
+- [Struktur Folder](#installation-instructions)
+
+## Kelompok
+
+1. Faris Syahrul Muhammad
+2. Ihsan Restu Adi
+3. Andika Bahari
+4. Arul
+
+
 ## 📂 Struktur Folder
 
 ```
