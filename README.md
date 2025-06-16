@@ -18,12 +18,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
 <p align="center">
-  <img src="assets/Main.png" width="700"/>
   <img src="assets/Main.png" width="600"/>
-  <img src="assets/Main.png" width="500"/>
-  <img src="assets/Main.png" width="400"/>
-  <img src="assets/Main.png" width="300"/>
-  <img src="assets/Main.png" width="200"/>
   <br/>
   <i>Gambar 1: Tampilan kode utama dari Daisuke Clinic</i>
 </p>
