@@ -3,9 +3,9 @@
 ## Daftar Isi
 
 - [Kelompok](#kelompok)
-- [Struktur Folder](#installation-instructions)
+- [Struktur Folder](#struktur-folder)
 
-## Kelompok
+## 👨🏻‍💻 Kelompok
 
 1. Faris Syahrul Muhammad
 2. Ihsan Restu Adi
@@ -42,6 +42,9 @@ dsa-clinic/
 └── README.md                  
 ```
 
+## 🖥️ Penjelasan Kode
+
+### Main.java
 <p align="center">
   <img src="assets/Main.png" width="600"/>
   <br/>
