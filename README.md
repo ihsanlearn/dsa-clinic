@@ -46,7 +46,7 @@ dsa-clinic/
 
 ## `Main.java`
 <p align="center">
-  <img src="assets/Main.png" width="600"/>
+  <img src="assets/main.png" width="600"/>
   <br/>
 </p>
 
