@@ -48,7 +48,7 @@ dsa-clinic/
 
 # 🧩 Penjelasan Kode
 
-## `Main.java`
+## `Main.java` - Entry Point
 <p align="center">
   <img src="assets/main.png" width="600"/>
   <br/>
@@ -76,7 +76,7 @@ Blok kode ini merupakan pusat pengontrol dari seluruh fitur sistem klinik dan me
 
 ---
 
-# 📁 `src/models` - Model Untuk Beberapa Data
+## 📁 `src/models` - Model Untuk Beberapa Data
 
 <p align="center">
   <img src="assets/patient.png" width="400"/>
@@ -137,7 +137,7 @@ Kelas-kelas dalam `models/` ini adalah pondasi utama dari data yang dikelola sis
 
 ---
 
-# 📁 `structures/` - Struktur Data Kustom
+## 📁 `structures/` - Struktur Data Kustom
 
 Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpan dan memproses pasien, dokter, dan janji temu.
 
@@ -167,7 +167,7 @@ Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpa
 
 ---
 
-# 📁 `utils/` - Kelas Pendukung/Pembantu
+## 📁 `utils/` - Kelas Pendukung/Pembantu
 
 <p align="center">
   <img src="assets/idGenerator.png" width=600"/>
@@ -192,7 +192,7 @@ Struktur folder ini dirancang untuk modularitas, keterbacaan, dan untuk melatih 
 
 ---
 
-# 🚀 Cara Menjalankan Proyek Ini
+## 🚀 Cara Menjalankan Proyek Ini
 
 Proyek ini dibuat **tanpa menggunakan build tools** seperti Maven atau Gradle. Struktur folder menggunakan pendekatan manual:
 
@@ -201,14 +201,14 @@ Proyek ini dibuat **tanpa menggunakan build tools** seperti Maven atau Gradle. S
 📁 bin/   → tempat menyimpan file hasil kompilasi
 ```
 
-## 🔧 Persyaratan
+### 🔧 Persyaratan
 - **Java Development Kit (JDK) versi 21 atau lebih baru**
 - OS Linux/macOS/Windows dengan terminal
 - Sudah mengatur `JAVA_HOME` dan menambahkan `javac` serta `java` ke dalam `PATH`
 
 ---
 
-## 📥 1. Clone Repository
+### 📥 1. Clone Repository
 
 ```bash
 git clone https://github.com/ihsanlearn/dsa-clinic.git
@@ -217,7 +217,7 @@ cd daisuke-clinic
 
 ---
 
-## 🏗️ 2. Kompilasi Semua File Java
+### 🏗️ 2. Kompilasi Semua File Java
 
 ```bash
 javac --enable-preview -d bin -cp src $(find src -name "*.java")
@@ -231,7 +231,7 @@ javac --enable-preview -d bin -cp src $(find src -name "*.java")
 
 ---
 
-## ▶️ 3. Jalankan Program
+### ▶️ 3. Jalankan Program
 
 ```bash
 java --enable-preview -cp bin Main
@@ -244,7 +244,7 @@ java --enable-preview -cp bin app.Main
 
 ---
 
-## 📌 Catatan Tambahan
+### 📌 Catatan Tambahan
 
 - Jika folder `bin/` belum ada, akan otomatis dibuat saat proses kompilasi.
 - Pastikan tidak ada error selama kompilasi agar program dapat berjalan dengan baik.
@@ -252,7 +252,7 @@ java --enable-preview -cp bin app.Main
 
 ---
 
-## 💡 Tips Opsional (Shell Script)
+### 💡 Tips Opsional (Shell Script)
 
 Kamu bisa membuat file bernama `run.sh` untuk compile & run secara otomatis:
 
