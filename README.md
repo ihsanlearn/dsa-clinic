@@ -72,7 +72,7 @@ Blok kode ini merupakan pusat pengontrol dari seluruh fitur sistem klinik dan me
 
 ---
 
-# 🧩 Penjelasan Kode - `src/models/`
+# 🧩 Folder `src/models` - Model Untuk Beberapa Data
 
 Folder `models/` berisi **representasi data utama** dalam sistem Daisuke Clinic. File-file di dalam folder ini mendefinisikan struktur dan perilaku objek penting seperti pasien, dokter, dan janji temu. Kelas-kelas ini digunakan di berbagai struktur data (`LinkedList`, `BST`, `AppointmentMap`) untuk menyimpan dan memanipulasi data secara efisien.
 
@@ -85,7 +85,6 @@ Kelas ini merepresentasikan **data pasien** dalam sistem.
 - `id` – ID pasien (unik)
 - `name` – Nama pasien
 - `age` – Umur pasien
-- `disease` – Jenis penyakit atau keluhan
 
 #### Fitur:
 - Constructor untuk inisialisasi objek
@@ -116,7 +115,7 @@ Kelas ini merepresentasikan **janji temu** antara pasien dan dokter.
 #### Atribut umum:
 - `patient` – Objek pasien yang membuat janji
 - `doctor` – Objek dokter tujuan
-- `date` – Tanggal janji temu (biasanya berupa string atau objek tanggal)
+- `time` – Jam janji temu dengan format (HH:mm)
 
 #### Fitur:
 - Constructor untuk membuat janji temu baru
@@ -126,3 +125,52 @@ Kelas ini merepresentasikan **janji temu** antara pasien dan dokter.
 ---
 
 Kelas-kelas dalam `models/` ini adalah pondasi utama dari data yang dikelola sistem. Struktur mereka sederhana namun cukup fleksibel untuk diperluas jika proyek berkembang di masa depan.
+
+---
+
+# 🧩 Folder `structures/` - Struktur Data Kustom
+
+Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpan dan memproses pasien, dokter, dan janji temu.
+
+### 📄 `LinkedList.java`
+- Implementasi linked list sederhana (single-linked list).
+- Menyimpan data pasien dan dokter.
+- Mendukung operasi tambah, hapus, cari, dan tampilkan.
+
+### 📄 `Node.java`
+- Kelas simpul (`node`) untuk digunakan dalam `LinkedList`, `BST`, dan lainnya.
+- Menyimpan data generik (`Object data`) dan referensi ke simpul berikutnya.
+
+### 📄 `BST.java` (Binary Search Tree)
+- Menyimpan data pasien berdasarkan ID.
+- Memungkinkan pencarian pasien yang efisien.
+- Mendukung operasi `insert`, `search`, dan `inOrder` traversal.
+
+### 📄 `AppointmentMap.java`
+- Menyimpan daftar janji temu berdasarkan dokter.
+- Mirip seperti `Map<Doctor, Queue<Appointment>>`.
+- Berisi fitur untuk menjadwalkan dan memproses janji temu.
+
+### 📄 `PriorityQueue.java`
+- Antrian dengan **prioritas**, digunakan dalam penjadwalan janji temu.
+- Pasien dapat diatur berdasarkan prioritas (misal: umur, penyakit, urutan waktu).
+- Tidak menggunakan `java.util.PriorityQueue`.
+
+---
+
+## 🧩 Folder `utils/` - Kelas Pendukung
+
+Folder ini berisi kelas-kelas **utility/helper** untuk mendukung operasi umum dalam aplikasi.
+
+### 📄 `FileManager.java`
+- Bertanggung jawab untuk **membaca dan menulis** data ke file `.txt`.
+- Memuat dan menyimpan data pasien, dokter, BST, dan appointment ke file saat program dijalankan/ditutup.
+
+### 📄 `IdGenerator.java`
+- Menghasilkan ID unik untuk pasien dan dokter.
+- Menjaga agar tidak terjadi duplikasi ID.
+- Biasanya menggunakan counter sederhana yang meningkat tiap pembuatan data baru.
+
+---
+
+Struktur folder ini dirancang untuk modularitas, keterbacaan, dan untuk melatih pemahaman konsep struktur data serta manajemen file tanpa library eksternal.
