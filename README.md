@@ -8,6 +8,7 @@
 
 - [Kelompok](#-anggota-kelompok)
 - [Struktur Folder](#-struktur-folder)
+- [Manajemen Data](#-manajemen-data)
 - [Penjelasan Kode](#-penjelasan-kode)
 - [Cara Menjalankan Program Ini](#-cara-menjalankan-program-ini)
 
@@ -19,6 +20,16 @@
 2. Ihsan Restu Adi (L0124058)
 3. Andika Bahari Suryanegara (L0124087)
 4. Aisyah Nurul Sholikhah (L0124085)
+
+---
+
+## 🗃️ Manajemen Data
+
+Program ini menggunakan file `.txt` sebagai tempat penyimpanan data utama (persisten). Saat program dijalankan, data akan **dibaca dari file** dan dimasukkan ke dalam **struktur data di memori** seperti `LinkedList`, `BST`, dan `Map`.
+
+🧠 Selama program berjalan, semua operasi seperti menambah pasien, login dokter, atau menjadwalkan appointment akan **diproses di dalam variabel memori** – bukan langsung ke file.
+
+📦 Setelah pengguna memilih keluar dari program (`exit`), semua data di memori akan **disimpan kembali ke file `.txt`**, sehingga data tetap aman dan tersedia saat program dijalankan kembali nanti.
 
 ---
 
