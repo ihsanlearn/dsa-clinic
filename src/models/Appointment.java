@@ -4,7 +4,7 @@ public class Appointment {
     public int id;
     public int patientId;
     public int doctorId;
-    public String time; // iki 24jam, HH:mm
+    public String time;
 
     public Appointment(int id, int patientId, int doctorId, String time) {
         this.id = id;
