@@ -42,13 +42,12 @@ dsa-clinic/
 └── README.md                  
 ```
 
-# 🖥️ Penjelasan Kode Clinic Sehat Tentram Sejahtera Indonesia Raya
+# 🖥️ Penjelasan Kode - `src/`
 
 ## `Main.java`
 <p align="center">
   <img src="assets/Main.png" width="600"/>
   <br/>
-  <i>Gambar 1: Tampilan kode utama dari Daisuke Clinic</i>
 </p>
 
 
