@@ -1,17 +1,21 @@
 # Clinic Sehat Tentram Sejahtera Indonesia Raya
 
-## Daftar Isi
+---
+
+## Table of Content
 
 - [Kelompok](#kelompok)
 - [Struktur Folder](#struktur-folder)
+- [Penjelasan Kode](#penjelasan-kode)
 
-## 👨🏻‍💻 Kelompok
+## 👨🏻‍💻 Anggota Kelompok
 
 1. Faris Syahrul Muhammad
 2. Ihsan Restu Adi
 3. Andika Bahari
 4. Arul
 
+---
 
 ## 📂 Struktur Folder
 
@@ -42,7 +46,7 @@ dsa-clinic/
 └── README.md                  
 ```
 
-# 🧩 Penjelasan Kode - `src/`
+# 🧩 Penjelasan Kode
 
 ## `Main.java`
 <p align="center">
@@ -72,7 +76,7 @@ Blok kode ini merupakan pusat pengontrol dari seluruh fitur sistem klinik dan me
 
 ---
 
-# 📁 Folder `src/models` - Model Untuk Beberapa Data
+# 📁 `src/models` - Model Untuk Beberapa Data
 
 <p align="center">
   <img src="assets/patient.png" width="400"/>
@@ -133,7 +137,7 @@ Kelas-kelas dalam `models/` ini adalah pondasi utama dari data yang dikelola sis
 
 ---
 
-# 📁 Folder `structures/` - Struktur Data Kustom
+# 📁 `structures/` - Struktur Data Kustom
 
 Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpan dan memproses pasien, dokter, dan janji temu.
 
@@ -163,7 +167,7 @@ Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpa
 
 ---
 
-# 📁 Folder `utils/` - Kelas Pendukung
+# 📁 `utils/` - Kelas Pendukung/Pembantu
 
 <p align="center">
   <img src="assets/idGenerator.png" width=600"/>
