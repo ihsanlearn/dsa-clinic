@@ -74,6 +74,13 @@ Blok kode ini merupakan pusat pengontrol dari seluruh fitur sistem klinik dan me
 
 # 📁 Folder `src/models` - Model Untuk Beberapa Data
 
+<p align="center">
+  <img src="assets/patient.png" width="200"/>
+  <img src="assets/doctor.png" width="200"/>
+  <img src="assets/appointment.png" width="200"/>
+  <br/>
+</p>
+
 Folder `models/` berisi **representasi data utama** dalam sistem Daisuke Clinic. File-file di dalam folder ini mendefinisikan struktur dan perilaku objek penting seperti pasien, dokter, dan janji temu. Kelas-kelas ini digunakan di berbagai struktur data (`LinkedList`, `BST`, `AppointmentMap`) untuk menyimpan dan memanipulasi data secara efisien.
 
 ### 📄 `Patient.java`
