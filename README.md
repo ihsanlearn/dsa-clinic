@@ -207,6 +207,7 @@ Proyek ini dibuat **tanpa menggunakan build tools** seperti Maven atau Gradle. S
 ```
 
 ### 🔧 Persyaratan
+- **Git** – untuk meng-clone repository
 - **Java Development Kit (JDK) versi 21 atau lebih baru**
 - OS Linux/macOS/Windows dengan terminal
 - Sudah mengatur `JAVA_HOME` dan menambahkan `javac` serta `java` ke dalam `PATH`
