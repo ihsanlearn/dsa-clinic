@@ -75,9 +75,9 @@ Blok kode ini merupakan pusat pengontrol dari seluruh fitur sistem klinik dan me
 # 📁 Folder `src/models` - Model Untuk Beberapa Data
 
 <p align="center">
-  <img src="assets/patient.png" width="200"/>
-  <img src="assets/doctor.png" width="200"/>
-  <img src="assets/appointment.png" width="200"/>
+  <img src="assets/patient.png" width="400"/>
+  <img src="assets/doctor.png" width="400"/>
+  <img src="assets/appointment.png" width="400"/>
   <br/>
 </p>
 
