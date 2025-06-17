@@ -185,3 +185,86 @@ Folder ini berisi kelas-kelas **utility/helper** untuk mendukung operasi umum da
 ---
 
 Struktur folder ini dirancang untuk modularitas, keterbacaan, dan untuk melatih pemahaman konsep struktur data serta manajemen file tanpa library eksternal.
+
+---
+
+## 🚀 Cara Menjalankan Proyek Ini
+
+Proyek ini dibuat **tanpa menggunakan build tools** seperti Maven atau Gradle. Struktur folder menggunakan pendekatan manual:
+
+```
+📁 src/   → berisi file sumber Java
+📁 bin/   → tempat menyimpan file hasil kompilasi
+```
+
+### 🔧 Persyaratan
+- **Java Development Kit (JDK) versi 21 atau lebih baru**
+- OS Linux/macOS/Windows dengan terminal
+- Sudah mengatur `JAVA_HOME` dan menambahkan `javac` serta `java` ke dalam `PATH`
+
+---
+
+### 📥 1. Clone Repository
+
+```bash
+git clone https://github.com/ihsanlearn/dsa-clinic.git
+cd daisuke-clinic
+```
+
+---
+
+### 🏗️ 2. Kompilasi Semua File Java
+
+```bash
+javac --enable-preview -d bin -cp src $(find src -name "*.java")
+```
+
+> Penjelasan:
+> - `--enable-preview` : digunakan jika kamu memakai fitur preview Java (seperti pattern matching, dsb)
+> - `-d bin` : hasil kompilasi akan disimpan ke folder `bin`
+> - `-cp src` : menyetel classpath ke folder `src`
+> - `$(find src -name "*.java")` : mencari semua file `.java` dari folder `src` secara rekursif
+
+---
+
+### ▶️ 3. Jalankan Program
+
+```bash
+java --enable-preview -cp bin Main
+```
+
+> Jika file `Main.java` berada dalam package (misalnya `package app;`), maka gunakan:
+```bash
+java --enable-preview -cp bin app.Main
+```
+
+---
+
+### 📌 Catatan Tambahan
+
+- Jika folder `bin/` belum ada, akan otomatis dibuat saat proses kompilasi.
+- Pastikan tidak ada error selama kompilasi agar program dapat berjalan dengan baik.
+- Simpan data `.txt` yang digunakan oleh program (jika ada) di lokasi yang sesuai (biasanya di root project atau `data/` folder jika kamu membuatnya sendiri).
+
+---
+
+### 💡 Tips Opsional (Shell Script)
+
+Kamu bisa membuat file bernama `run.sh` untuk compile & run secara otomatis:
+
+```bash
+#!/bin/bash
+javac --enable-preview -d bin -cp src $(find src -name "*.java")
+java --enable-preview -cp bin Main
+```
+
+Lalu jalankan:
+
+```bash
+chmod +x run.sh
+./run.sh
+```
+
+---
+
+Selamat mencoba Daisuke Clinic! 🩺
