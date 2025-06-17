@@ -1,5 +1,7 @@
 # Clinic Sehat Tentram Sejahtera Indonesia Raya
 
+`Clinic Sehat Tentram Sejahtera Indonesia Raya` adalah sebuah aplikasi berbasis terminal (Command Line Interface) yang dirancang untuk membantu manajemen klinik secara sederhana namun efisien. Program ini dibangun menggunakan bahasa pemrograman Java tanpa bantuan build tools (e.g. Maven atau Gradle), dan menggunakan struktur folder manual (`src`, `bin`, dll).
+
 ---
 
 ## Table of Content
