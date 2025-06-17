@@ -28,6 +28,8 @@ dsa-clinic/
 │   → Pengaturan editor (opsional)
 ├── lib/                    
 │   → Kosong / opsional
+├── bin/                    
+│   → file hasil kompilasi akan berada disini
 ├── assets/                    
 │   → gambar untuk keperluan markdown file
 ├── src/ 
@@ -215,7 +217,7 @@ Proyek ini dibuat **tanpa menggunakan build tools** seperti Maven atau Gradle. S
 
 ```bash
 git clone https://github.com/ihsanlearn/dsa-clinic.git
-cd daisuke-clinic
+cd dsa-clinic
 ```
 
 ---
