@@ -292,4 +292,4 @@ chmod +x run.sh
 
 ---
 
-Selamat mencoba Daisuke Clinic! 🩺
+Selamat mencoba Clinic Sehat Tentram Sejahtera Indonesia Raya! 🩺
