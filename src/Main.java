@@ -33,7 +33,7 @@ public class Main {
             System.out.println("[[ ( 12) Display All Patients (BST Inorder)      ]]");
             System.out.println("[[ ( 0 ) Exit                                    ]]");
             System.out.println("[[-----------------------------------------------]]");
-            System.out.print("]] Choose ?> ");
+            System.out.print("Choose ?> ");
             choice = Integer.parseInt(sc.nextLine());
 
             switch (choice) {
@@ -49,8 +49,8 @@ public class Main {
                 case 10 -> appointmentMap.display(sc);
                 case 11 -> patientTree.searchInput(sc);
                 case 12 -> patientTree.inOrder();
-                case 0 -> System.out.println("Saving & exiting...");
-                default -> System.out.println("Invalid choice.");
+                case 0 -> System.out.println("saving & exiting...");
+                default -> System.out.println("invalid choice!");
             }
         } while (choice != 0);
 
