@@ -166,8 +166,8 @@ Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpa
 # 📁 Folder `utils/` - Kelas Pendukung
 
 <p align="center">
-  <img src="assets/idGenerator.png.png" width=600"/>
-  <img src="assets/fileManager.png.png" width="600"/>
+  <img src="assets/idGenerator.png" width=600"/>
+  <img src="assets/fileManager.png" width="600"/>
   <br/>
 </p>
 
