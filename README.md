@@ -72,13 +72,13 @@ Blok kode ini merupakan pusat pengontrol dari seluruh fitur sistem klinik dan me
 
 ---
 
-# 🧩 Folder `src/models` - Model Untuk Beberapa Data
+# 📁 Folder `src/models` - Model Untuk Beberapa Data
 
 Folder `models/` berisi **representasi data utama** dalam sistem Daisuke Clinic. File-file di dalam folder ini mendefinisikan struktur dan perilaku objek penting seperti pasien, dokter, dan janji temu. Kelas-kelas ini digunakan di berbagai struktur data (`LinkedList`, `BST`, `AppointmentMap`) untuk menyimpan dan memanipulasi data secara efisien.
 
 ## 📄 Isi File di `models/`
 
-### 👤 `Patient.java`
+### 📄 `Patient.java`
 Kelas ini merepresentasikan **data pasien** dalam sistem.
 
 #### Atribut umum:
@@ -93,7 +93,7 @@ Kelas ini merepresentasikan **data pasien** dalam sistem.
 
 ---
 
-### 🩺 `Doctor.java`
+### 📄 `Doctor.java`
 Kelas ini menyimpan data dan perilaku **dokter** yang tersedia di sistem.
 
 #### Atribut umum:
@@ -109,7 +109,7 @@ Kelas ini menyimpan data dan perilaku **dokter** yang tersedia di sistem.
 
 ---
 
-### 📅 `Appointment.java`
+### 📄 `Appointment.java`
 Kelas ini merepresentasikan **janji temu** antara pasien dan dokter.
 
 #### Atribut umum:
@@ -128,7 +128,7 @@ Kelas-kelas dalam `models/` ini adalah pondasi utama dari data yang dikelola sis
 
 ---
 
-# 🧩 Folder `structures/` - Struktur Data Kustom
+# 📁 Folder `structures/` - Struktur Data Kustom
 
 Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpan dan memproses pasien, dokter, dan janji temu.
 
@@ -158,7 +158,7 @@ Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpa
 
 ---
 
-## 🧩 Folder `utils/` - Kelas Pendukung
+# 📁 Folder `utils/` - Kelas Pendukung
 
 Folder ini berisi kelas-kelas **utility/helper** untuk mendukung operasi umum dalam aplikasi.
 
