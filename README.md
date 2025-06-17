@@ -42,20 +42,19 @@ dsa-clinic/
 └── README.md                  
 ```
 
-## 🖥️ Penjelasan Kode
+# 🖥️ Penjelasan Kode Clinic Sehat Tentram Sejahtera Indonesia Raya
 
-### Main.java
+## `Main.java`
 <p align="center">
   <img src="assets/Main.png" width="600"/>
   <br/>
   <i>Gambar 1: Tampilan kode utama dari Daisuke Clinic</i>
 </p>
 
-# 🩺 Penjelasan Kode `Main.java` - Daisuke Clinic
 
 File `Main.java` adalah titik masuk utama (entry point) dari aplikasi **Daisuke Clinic**, sebuah sistem manajemen klinik berbasis Command Line Interface (CLI) yang dibuat dengan Java. File ini bertanggung jawab atas alur utama program dan interaksi pengguna melalui menu terminal.
 
-## 📌 Ringkasan Fungsi
+### 📌 Ringkasan Fungsi
 
 - **Load Data Awal:** Mengambil data dari file menggunakan `FileManager.loadAll()` ke dalam struktur data internal seperti `LinkedList`, `BST`, dan `AppointmentMap`.
 - **Menu Utama:** Menampilkan menu pilihan kepada pengguna menggunakan sistem perulangan `do-while`.
@@ -63,7 +62,7 @@ File `Main.java` adalah titik masuk utama (entry point) dari aplikasi **Daisuke 
 - **Fungsi Klinik:** Menyediakan berbagai fitur untuk mengelola data pasien, login/logout dokter, jadwal janji temu, dan operasi dengan pohon BST.
 - **Simpan Data Akhir:** Menyimpan seluruh data kembali ke file dengan `FileManager.saveAll()` saat pengguna memilih keluar (`choice == 0`).
 
-## 🧩 Struktur Data yang Digunakan
+### 🧩 Struktur Data yang Digunakan
 
 - `LinkedList`: Menyimpan daftar pasien (`patientList`) dan dokter (`doctorList`).
 - `BST` (Binary Search Tree): Menyimpan data pasien berdasarkan ID untuk pencarian yang lebih cepat.
