@@ -6,7 +6,7 @@
 
 ## Table of Content
 
-- [Kelompok](#-anggota-kelompok)
+- [Anggota Kelompok](#-anggota-kelompok)
 - [Struktur Folder](#-struktur-folder)
 - [Manajemen Data](#-manajemen-data)
 - [Penjelasan Kode](#-penjelasan-kode)
@@ -267,6 +267,7 @@ java --enable-preview -cp bin app.Main
 
 ### 📌 Catatan Tambahan
 
+- Program ini belum sepenuhnya memiliki validasi yang matang.
 - Jika folder `bin/` belum ada, akan otomatis dibuat saat proses kompilasi.
 - Pastikan tidak ada error selama kompilasi agar program dapat berjalan dengan baik.
 - Simpan data `.txt` yang digunakan oleh program (jika ada) di lokasi yang sesuai (biasanya di root project atau `data/` folder jika kamu membuatnya sendiri).
