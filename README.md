@@ -1,6 +1,6 @@
 # Clinic Sehat Tentram Sejahtera Indonesia Raya
 
-`Clinic Sehat Tentram Sejahtera Indonesia Raya` adalah sebuah aplikasi berbasis terminal (Command Line Interface) yang dirancang untuk membantu manajemen klinik secara sederhana namun efisien. Program ini dibangun menggunakan bahasa pemrograman Java tanpa bantuan build tools (e.g. Maven atau Gradle), dan menggunakan struktur folder manual (`src`, `bin`, dll).
+`Clinic Sehat Tentram Sejahtera Indonesia Raya` adalah sebuah aplikasi berbasis terminal (Command Line Interface) yang dirancang untuk membantu manajemen klinik secara sederhana namun efisien. Program ini dibangun menggunakan bahasa pemrograman Java tanpa bantuan build tools (e.g. Maven atau Gradle), dan menggunakan struktur folder manual (`src`, `bin`, dll) dan menggunakan txt file sebagai [penyimpanan data](#️-manajemen-data).
 
 ---
 
@@ -20,16 +20,6 @@
 2. Ihsan Restu Adi (L0124058)
 3. Andika Bahari Suryanegara (L0124087)
 4. Aisyah Nurul Sholikhah (L0124085)
-
----
-
-## 🗃️ Manajemen Data
-
-Program ini menggunakan file `.txt` sebagai tempat penyimpanan data utama (persisten). Saat program dijalankan, data akan **dibaca dari file** dan dimasukkan ke dalam **struktur data di memori** seperti `LinkedList`, `BST`, dan `Map`.
-
-🧠 Selama program berjalan, semua operasi seperti menambah pasien, login dokter, atau menjadwalkan appointment akan **diproses di dalam variabel memori** – bukan langsung ke file.
-
-📦 Setelah pengguna memilih keluar dari program (`exit`), semua data di memori akan **disimpan kembali ke file `.txt`**, sehingga data tetap aman dan tersedia saat program dijalankan kembali nanti.
 
 ---
 
@@ -63,6 +53,18 @@ dsa-clinic/
 ├── .gitignore              
 └── README.md                  
 ```
+
+---
+
+## 🗃️ Manajemen Data
+
+Program ini menggunakan file `.txt` sebagai tempat penyimpanan data utama (persisten). Saat program dijalankan, data akan **dibaca dari file** dan dimasukkan ke dalam **struktur data di memori** seperti `LinkedList`, `BST`, dan `Map`.
+
+🧠 Selama program berjalan, semua operasi seperti menambah pasien, login dokter, atau menjadwalkan appointment akan **diproses di dalam variabel memori** – bukan langsung ke file.
+
+📦 Setelah pengguna memilih keluar dari program (`exit`), semua data di memori akan **disimpan kembali ke file `.txt`**, sehingga data tetap aman dan tersedia saat program dijalankan kembali nanti.
+
+---
 
 # 🧩 Penjelasan Kode
 
