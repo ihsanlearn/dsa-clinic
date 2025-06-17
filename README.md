@@ -165,6 +165,12 @@ Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpa
 
 # 📁 Folder `utils/` - Kelas Pendukung
 
+<p align="center">
+  <img src="assets/idGenerator.png.png" width=600"/>
+  <img src="assets/fileManager.png.png" width="600"/>
+  <br/>
+</p>
+
 Folder ini berisi kelas-kelas **utility/helper** untuk mendukung operasi umum dalam aplikasi.
 
 ### 📄 `FileManager.java`
