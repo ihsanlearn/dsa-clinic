@@ -11,45 +11,45 @@ public class AppointmentMap {
     private int count = 0;
 
     public void schedule(Scanner sc, LinkedList patients, LinkedList doctors) {
-        System.out.print("Patient ID: ");
+        System.out.print("Patient ID   > ");
         int pid = Integer.parseInt(sc.nextLine());
 
-        System.out.print("Doctor ID: ");
+        System.out.print("Doctor ID    > ");
         int did = Integer.parseInt(sc.nextLine());
 
         Doctor d = findDoctorById(doctors, did);
         if (d == null || d.status.equals("inactive")) {
-            System.out.println("Doctor not found or not active.");
+            System.out.println("doctor not found or not active!");
             return;
         }
 
-        System.out.print("Time (HH:mm): ");
+        System.out.print("Time (HH:mm) > ");
         String time = sc.nextLine();
 
         Appointment a = new Appointment(IdGenerator.getNextAppointmentId(), pid, did, time);
         getQueue(did).enqueue(a);
-        System.out.println("Appointment scheduled.");
+        System.out.println("appointment scheduled!");
     }
 
     public void process(Scanner sc, LinkedList doctors) {
-        System.out.print("Doctor ID: ");
+        System.out.print("Doctor ID > ");
         int id = Integer.parseInt(sc.nextLine());
         Doctor d = findDoctorById(doctors, id);
         if (d == null || d.status.equals("inactive")) {
-            System.out.println("Doctor not logged in.");
+            System.out.println("doctor must login before process the appointmet!");
             return;
         }
 
         Appointment a = getQueue(id).dequeue();
         if (a == null) {
-            System.out.println("No appointments.");
+            System.out.println("no appointments!");
         } else {
-            System.out.println("Processing appointment: " + a.id + " at " + a.time);
+            System.out.println("processing appointment " + a.id + " at " + a.time);
         }
     }
 
     public void display(Scanner sc) {
-        System.out.print("Doctor ID: ");
+        System.out.print("Doctor ID > ");
         int id = Integer.parseInt(sc.nextLine());
         getQueue(id).display();
     }

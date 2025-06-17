@@ -16,11 +16,11 @@ public class Doctor {
     }
 
     public String serialize() {
-        return id + ";" + name + ";" + specialty + ";" + password + ";" + status;
+        return id + "|" + name + "|" + specialty + "|" + password + "|" + status;
     }
 
     public static Doctor deserialize(String line) {
-        String[] parts = line.split(";");
+        String[] parts = line.split("\\|");
         return new Doctor(
             Integer.parseInt(parts[0]),
             parts[1],

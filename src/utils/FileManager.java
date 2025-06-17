@@ -35,7 +35,7 @@ public class FileManager {
             }
             br.close();
         } catch (IOException e) {
-            System.out.println("Error loading data: " + e.getMessage());
+            System.out.println("(error loading data) " + e.getMessage());
         }
     }
 
@@ -67,7 +67,7 @@ public class FileManager {
             }
             pw.close();
         } catch (IOException e) {
-            System.out.println("Error saving data: " + e.getMessage());
+            System.out.println("(error saving data) " + e.getMessage());
         }
     }
 }

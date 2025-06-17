@@ -14,11 +14,11 @@ public class Appointment {
     }
 
     public String serialize() {
-        return id + ";" + patientId + ";" + doctorId + ";" + time;
+        return id + "|" + patientId + "|" + doctorId + "|" + time;
     }
 
     public static Appointment deserialize(String line) {
-        String[] parts = line.split(";");
+        String[] parts = line.split("\\|");
         return new Appointment(
             Integer.parseInt(parts[0]),
             Integer.parseInt(parts[1]),

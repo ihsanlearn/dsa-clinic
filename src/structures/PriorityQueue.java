@@ -40,7 +40,7 @@ public class PriorityQueue {
         AppNode temp = head;
         while (temp != null) {
             Appointment a = temp.data;
-            System.out.println("Appointment ID: " + a.id + ", Time: " + a.time);
+            System.out.println("Appointment ID ?> " + a.id + ", Time ?> " + a.time);
             temp = temp.next;
         }
     }

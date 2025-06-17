@@ -9,18 +9,18 @@ public class LinkedList {
     private Node<Object> head;
 
     public void addFromInput(Scanner sc) {
-        System.out.print("Name: ");
+        System.out.print("Name    > ");
         String name = sc.nextLine();
-        System.out.print("Age: ");
+        System.out.print("Age     > ");
         int age = Integer.parseInt(sc.nextLine());
-        System.out.print("Address: ");
+        System.out.print("Address > ");
         String address = sc.nextLine();
-        System.out.print("Phone: ");
+        System.out.print("Phone   > ");
         String phone = sc.nextLine();
 
         Patient p = new Patient(IdGenerator.getNextPatientId(), name, age, address, phone);
         insert(p);
-        System.out.println("Patient added.");
+        System.out.println("patient added!");
     }
 
     public void insert(Object data) {
@@ -34,7 +34,7 @@ public class LinkedList {
     }
 
     public void removeByIdInput(Scanner sc) {
-        System.out.print("Enter Patient ID to remove: ");
+        System.out.print("Patient ID to remove > ");
         int id = Integer.parseInt(sc.nextLine());
         removeById(id);
     }
@@ -45,27 +45,27 @@ public class LinkedList {
             if (temp.data instanceof Patient p && p.id == id) {
                 if (prev == null) head = temp.next;
                 else prev.next = temp.next;
-                System.out.println("Patient removed.");
+                System.out.println("patient removed!");
                 return;
             }
             prev = temp;
             temp = temp.next;
         }
-        System.out.println("Patient not found.");
+        System.out.println("patient not found!");
     }
 
     public void findByNameInput(Scanner sc) {
-        System.out.print("Search by name: ");
+        System.out.print("Search by name > ");
         String name = sc.nextLine().toLowerCase();
         Node<Object> temp = head;
         while (temp != null) {
             if (temp.data instanceof Patient p && p.name.toLowerCase().contains(name)) {
-                System.out.println("Found: " + p.name + " (" + p.id + ")");
+                System.out.println("Found) " + p.name + " (" + p.id + ")");
                 return;
             }
             temp = temp.next;
         }
-        System.out.println("Patient not found.");
+        System.out.println("patient not found!");
     }
 
     public Object findDoctorByUsername(String name) {
@@ -78,39 +78,39 @@ public class LinkedList {
     }
 
     public void loginDoctor(Scanner sc) {
-        System.out.print("Name: ");
+        System.out.print("Name      > ");
         String name = sc.nextLine();
         Doctor d = (Doctor) findDoctorByUsername(name);
 
         if (d == null) {
-            System.out.print("Specialty: ");
+            System.out.print("Specialty > ");
             String spec = sc.nextLine();
-            System.out.print("Password: ");
+            System.out.print("Password  > ");
             String pw = sc.nextLine();
             d = new Doctor(IdGenerator.getNextDoctorId(), name, spec, pw, IdGenerator.getCurrentTime());
             insert(d);
-            System.out.println("Signup & Login Success.");
+            System.out.println("login success!");
         } else {
-            System.out.print("Password: ");
+            System.out.print("Password  > ");
             String pw = sc.nextLine();
             if (!d.password.equals(pw)) {
-                System.out.println("Wrong password.");
+                System.out.println("wrong password!");
                 return;
             }
             d.status = IdGenerator.getCurrentTime();
-            System.out.println("Login success at " + d.status);
+            System.out.println("login success at " + d.status);
         }
     }
 
     public void logoutDoctor(Scanner sc) {
-        System.out.print("Name: ");
+        System.out.print("Name > ");
         String name = sc.nextLine();
         Doctor d = (Doctor) findDoctorByUsername(name);
         if (d != null && !d.status.equals("inactive")) {
             d.status = "inactive";
-            System.out.println("Logout success.");
+            System.out.println("logout success!");
         } else {
-            System.out.println("Doctor not found or already inactive.");
+            System.out.println("doctor not found or already inactive!");
         }
     }
 
@@ -129,9 +129,9 @@ public class LinkedList {
         }
 
         if (recent != null) {
-            System.out.println("Last login: " + recent.name + " at " + recent.status);
+            System.out.println("Last login ?> " + recent.name + " at " + recent.status);
         } else {
-            System.out.println("No active doctor.");
+            System.out.println("no active doctor!");
         }
     }
 
@@ -139,7 +139,7 @@ public class LinkedList {
         Node<Object> temp = head;
         while (temp != null) {
             if (temp.data instanceof Patient p) {
-                System.out.println(p.id + " - " + p.name + ", " + p.age + " yo, " + p.phone);
+                System.out.println(p.id + " - " + p.name + ", " + p.age + " years old, " + p.phone);
             }
             temp = temp.next;
         }

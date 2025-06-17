@@ -31,13 +31,13 @@ public class BST {
     }
 
     public void searchInput(Scanner sc) {
-        System.out.print("Enter Patient ID: ");
+        System.out.print("Patient ID > ");
         int id = Integer.parseInt(sc.nextLine());
         Patient found = search(root, id);
         if (found != null) {
-            System.out.println("Found: " + found.name + ", " + found.age + " y.o");
+            System.out.println("Found) " + found.name + found.age + " years odl");
         } else {
-            System.out.println("Patient not found.");
+            System.out.println("patient not found!");
         }
     }
 

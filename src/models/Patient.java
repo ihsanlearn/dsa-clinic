@@ -15,21 +15,6 @@ public class Patient {
         this.phone = phone;
     }
 
-    // public String serialize() {
-    //     return id + "\t" + name + "\t\t" + age + "\t" + address + "\t\t" + phone;
-    // }
-
-    // public static Patient deserialize(String line) {
-    //     String[] parts = line.split("\t");
-    //     return new Patient(
-    //         Integer.parseInt(parts[0]),
-    //         parts[1],
-    //         Integer.parseInt(parts[2]),
-    //         parts[3],
-    //         parts[4]
-    //     );
-    // }
-
     public String serialize() {
         return String.format("%-4d%-30s%-5d%-25s%s", id, name, age, address, phone);
     }
