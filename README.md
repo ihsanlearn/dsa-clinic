@@ -4,9 +4,10 @@
 
 ## Table of Content
 
-- [Kelompok](#kelompok)
-- [Struktur Folder](#struktur-folder)
+- [Kelompok](#-anggota-kelompok)
+- [Struktur Folder](#-struktur-folder)
 - [Penjelasan Kode](#-penjelasan-kode)
+- [Cara Menjalankan Program Ini](#-cara-menjalankan-program-ini)
 
 ## 👨🏻‍💻 Anggota Kelompok
 
@@ -192,7 +193,7 @@ Struktur folder ini dirancang untuk modularitas, keterbacaan, dan untuk melatih 
 
 ---
 
-## 🚀 Cara Menjalankan Proyek Ini
+## 🚀 Cara Menjalankan Program Ini
 
 Proyek ini dibuat **tanpa menggunakan build tools** seperti Maven atau Gradle. Struktur folder menggunakan pendekatan manual:
 
