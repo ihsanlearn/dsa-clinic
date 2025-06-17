@@ -11,6 +11,8 @@
 - [Penjelasan Kode](#-penjelasan-kode)
 - [Cara Menjalankan Program Ini](#-cara-menjalankan-program-ini)
 
+---
+
 ## 👨🏻‍💻 Anggota Kelompok
 
 1. Faris Syahrul Muhammad (L0124053)
