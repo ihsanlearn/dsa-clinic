@@ -167,7 +167,7 @@ Folder ini berisi **struktur data buatan sendiri** yang digunakan untuk menyimpa
 
 <p align="center">
   <img src="assets/idGenerator.png" width=600"/>
-  <img src="assets/fileManager.png" width="600"/>
+  <img src="assets/fileManager.png" width="800"/>
   <br/>
 </p>
 
