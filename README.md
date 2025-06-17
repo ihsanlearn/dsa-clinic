@@ -6,7 +6,7 @@
 
 - [Kelompok](#kelompok)
 - [Struktur Folder](#struktur-folder)
-- [Penjelasan Kode](#penjelasan-kode)
+- [Penjelasan Kode](#-penjelasan-kode)
 
 ## 👨🏻‍💻 Anggota Kelompok
 
