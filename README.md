@@ -18,8 +18,8 @@
 
 1. Faris Syahrul Muhammad (L0124053)
 2. Ihsan Restu Adi (L0124058)
-*3. Andika Bahari Suryanegara (L0124087)*
-*4. Aisyah Nurul Sholikhah (L0124085)*
+3. Andika Bahari Suryanegara (L0124087)
+4. Aisyah Nurul Sholikhah (L0124085)
 
 ---
 
